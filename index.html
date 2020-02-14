@@ -1,73 +1,72 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta data-framework="Skelet." data-ver="3.0.0" data-dev="Sēlekkt. Studio">
+  <title>Louis-Simon Mc Nicoll</title>
+  <meta name="description" content="Professional Portfolio">
+  <meta name="author" content="Louis-Simon Mc Nicoll">
 
-  <title>Project Title</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/line-awesome@1.3.0/dist/line-awesome/css/line-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Selekkt/skelet@latest/css/skelet.min.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Varela+Round" rel="stylesheet">
   <link rel="stylesheet" href="app.css">
-  <link rel="javascript" href="app.css">
 </head>
 
-<body onscroll="updateNavStatusOnScroll()">
-  <div class="overflow-wrap">
-    <div class="flex root">
-      <section id="home" class="flex height-fix">
-        <grid columns="2" style="max-width: 750px; margin: 0 auto; padding: 2rem">
-          <c class="content-font" span="2+1" span-s="row">
-            <p>Thank you for chosing <u>Skelet.</u> as your starting point for you next project.</p>
-            <p>Take a look at the <a href="https://selekkt.dk/skelet/v3/docs" target="_blank">documentation</a>.</p>
-          </c>
-        </grid>
-      </section>
+<body>
+  <div class="root">
+    <section id="home" class="flex-section home">
+      <span class="name-font"><b>Louis-Simon Mc Nicoll</b></span>
+    </section>
 
-      <nav id="navigation" class="flex desk">
-        <div class="link-wrap">
-          <div class="page-link active" dest="home">Home</div>
-          <div class="page-link" dest="projects">Projects</div>
-        </div>
-      </nav>
+    <!-- TODO make this work for mobile -->
+    <nav id="navigation" class="nav-dock content-font">
+      <a href="#home" class="current">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+    </nav>
 
-      <section id="projects" class="flex height-fix">
-        <grid columns="2" style="max-width: 750px; margin: 0 auto; padding: 2rem">
-          <c class="content-font" span="2+1" span-s="row">
-            <p>Thank you for chosing <u>Skelet.</u> as your starting point for you next project.</p>
-            <p>Take a look at the <a href="https://selekkt.dk/skelet/v3/docs" target="_blank">documentation</a>.</p>
-          </c>
-        </grid>
-      </section>
+    <section id="projects" class="flex-section">
+      <h1>Projects</h1>
+    </section>
 
-      <section id="gerg" class="flex height-fix">
-        <grid columns="2" style="max-width: 750px; margin: 0 auto; padding: 2rem">
-          <c class="content-font" span="2+1" span-s="row">
-            <p>Thank you for chosing <u>Skelet.</u> as your starting point for you next project.</p>
-            <p>Take a look at the <a href="https://selekkt.dk/skelet/v3/docs" target="_blank">documentation</a>.</p>
-          </c>
-        </grid>
-      </section>
-    </div>
+    <section id="skills" class="flex-section">
+      <h1>Skills</h1>
+    </section>
+
+    <section id="about" class="flex-section">
+      <h1>About</h1>
+    </section>
   </div>
 </body>
 
 <script>
-  function updateNavStatusOnScroll() {
+  let mainNavLinks = document.querySelectorAll("a");
+
+  function updateNavStatus() {
+    var scrollY = window.scrollY;
+
     if (window.pageYOffset < window.innerHeight) {
       document.getElementById("navigation").classList.remove("fixed");
     } else {
       document.getElementById("navigation").classList.add("fixed");
     }
+
+    mainNavLinks.forEach(link => {
+      let section = document.querySelector(link.hash);
+
+      if (section.offsetTop <= scrollY &&
+        section.offsetTop + section.offsetHeight > scrollY) {
+        link.classList.add("current");
+      } else {
+        link.classList.remove("current");
+      }
+    });
   }
-  window.onload = updateNavStatusOnScroll;
+
+  window.addEventListener("scroll", updateNavStatus);
+  window.onload = updateNavStatus;
 </script>
 
 </html>

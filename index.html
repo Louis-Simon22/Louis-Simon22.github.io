@@ -13,30 +13,51 @@
   <link rel="stylesheet" href="app.css">
 </head>
 
-<body>
+<body class="font-content">
   <div class="root">
-    <section id="home" class="flex-section home">
-      <span class="name-font"><b>Louis-Simon Mc Nicoll</b></span>
+    <section id="home" class="flex flex-column fill-viewport-height">
+      <div class="flex flex-center-bottom-content flex-items-home">
+        <span class="font-name"><b>Louis-Simon Mc Nicoll</b></span>
+      </div>
+      <div class="flex flex-row flex-center-content flex-items-home">
+        <div class="flex flex-row">
+          <div class="flex flex-stretch-content button button-big-square">
+            <a href="#projects" class="flex flex-center-content">
+              <span>Projects</span>
+            </a>
+          </div>
+          <div class="flex flex-stretch-content button button-big-square">
+            <a href="#skills" class="flex flex-center-content">
+              <span>Skills</span>
+            </a>
+          </div>
+          <div class="flex flex-stretch-content button button-big-square">
+            <a href="#about" class="flex flex-center-content">
+              <span>About</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- TODO make this work for mobile -->
-    <nav id="navigation" class="nav-dock content-font">
+    <nav id="navigation" class="nav-dock">
       <a href="#home" class="current">Home</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#about">About</a>
     </nav>
 
-    <section id="projects" class="flex-section">
-      <h1>Projects</h1>
+    <section id="projects" class="flex fill-viewport-height">
+      <h1 class="nav-bar-margins">Projects</h1>
     </section>
 
-    <section id="skills" class="flex-section">
-      <h1>Skills</h1>
+    <section id="skills" class="flex fill-viewport-height">
+      <h1 class="nav-bar-margins">Skills</h1>
     </section>
 
-    <section id="about" class="flex-section">
-      <h1>About</h1>
+    <section id="about" class="flex fill-viewport-height">
+      <h1 class="nav-bar-margins">About</h1>
     </section>
   </div>
 </body>

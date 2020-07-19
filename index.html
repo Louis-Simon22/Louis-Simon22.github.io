@@ -16,26 +16,24 @@
 <body class="font-content">
   <div class="root">
     <section id="home" class="flex flex-column fill-viewport-height">
-      <div class="flex flex-center-bottom-content flex-items-home">
+      <div class="flex home-title">
         <span class="font-name"><b>Louis-Simon Mc Nicoll</b></span>
       </div>
-      <div class="flex flex-row flex-center-content flex-items-home">
-        <div class="flex flex-row">
-          <div class="flex flex-stretch-content button button-big-square">
-            <a href="#projects" class="flex flex-center-content">
-              <span>Projects</span>
-            </a>
-          </div>
-          <div class="flex flex-stretch-content button button-big-square">
-            <a href="#skills" class="flex flex-center-content">
-              <span>Skills</span>
-            </a>
-          </div>
-          <div class="flex flex-stretch-content button button-big-square">
-            <a href="#about" class="flex flex-center-content">
-              <span>About</span>
-            </a>
-          </div>
+      <div class="flex flex-row home-buttons">
+        <div class="flex button button-big-square">
+          <a href="#projects" class="flex flex-center">
+            <span>Projects</span>
+          </a>
+        </div>
+        <div class="flex button button-big-square">
+          <a href="#skills" class="flex flex-center">
+            <span>Skills</span>
+          </a>
+        </div>
+        <div class="flex button button-big-square">
+          <a href="#about" class="flex flex-center">
+            <span>About</span>
+          </a>
         </div>
       </div>
     </section>
@@ -48,16 +46,39 @@
       <a href="#about">About</a>
     </nav>
 
-    <section id="projects" class="flex fill-viewport-height">
-      <h1 class="nav-bar-margins">Projects</h1>
+    <section id="projects" class="nav-bar-padding fill-viewport-height">
+      <div>
+        <h1>Projects</h1>
+        <div class="flex flex-column projects">
+          <div class="flex flex-row project">
+            <div class="flex project-image">
+              <img class="project-image" src="img/map-generation.png"
+                alt="Random map generation using Poisson Disk sampling and Voronoi diagrams. Pathfinding using Dijkstra's algorithm." />
+            </div>
+            <div class="flex project-text">
+              <div>
+                <h3>Learning C++</h3>
+                <p>
+                  Random map generation using Poisson Disk sampling and Voronoi diagrams. Pathfinding using Dijkstra's
+                  algorithm.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="skills" class="flex fill-viewport-height">
-      <h1 class="nav-bar-margins">Skills</h1>
+    <section id="skills" class="nav-bar-padding fill-viewport-height">
+      <div>
+        <h1>Skills</h1>
+      </div>
     </section>
 
-    <section id="about" class="flex fill-viewport-height">
-      <h1 class="nav-bar-margins">About</h1>
+    <section id="about" class="nav-bar-padding fill-viewport-height">
+      <div>
+        <h1>About</h1>
+      </div>
     </section>
   </div>
 </body>

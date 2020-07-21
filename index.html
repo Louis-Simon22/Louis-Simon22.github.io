@@ -17,23 +17,9 @@
   <div class="root">
     <section id="home" class="flex flex-column fill-viewport-height">
       <div class="flex home-title">
-        <span class="font-name"><b>Louis-Simon Mc Nicoll</b></span>
-      </div>
-      <div class="flex flex-row home-buttons">
-        <div class="flex button button-big-square">
-          <a href="#projects" class="flex flex-center">
-            <span>Projects</span>
-          </a>
-        </div>
-        <div class="flex button button-big-square">
-          <a href="#skills" class="flex flex-center">
-            <span>Skills</span>
-          </a>
-        </div>
-        <div class="flex button button-big-square">
-          <a href="#about" class="flex flex-center">
-            <span>About</span>
-          </a>
+        <div class="shape-container">
+          <b class="name">Louis-Simon Mc Nicoll</b>
+          <div class="shape circle"></div>
         </div>
       </div>
     </section>
@@ -46,22 +32,66 @@
       <a href="#about">About</a>
     </nav>
 
-    <section id="projects" class="nav-bar-padding fill-viewport-height">
+    <section id="projects" class="nav-bar-padding">
       <div>
         <h1>Projects</h1>
         <div class="flex flex-column projects">
-          <div class="flex flex-row project">
-            <div class="flex project-image">
-              <img class="project-image" src="img/map-generation.png"
-                alt="Random map generation using Poisson Disk sampling and Voronoi diagrams. Pathfinding using Dijkstra's algorithm." />
+          <div class="flex flex-row">
+            <div class="flex flex-row project">
+              <div class="flex">
+                <img class="project-image project-top-element" src="img/map-generation.png"
+                  alt="Random map generation using Poisson Disk sampling and Voronoi diagrams. Pathfinding using Dijkstra's algorithm." />
+              </div>
+              <div class="flex project-text project-bottom-element">
+                <div>
+                  <h3>Learning C++</h3>
+                  <p>
+                    This was a project to challenge myself and learn c++. The project generates random maps using Poisson Disk sampling and Voronoi diagrams. It also uses Dijkstra's
+                    algorithm for pathfinding and QML and QT for visualization.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="flex project-text">
-              <div>
-                <h3>Learning C++</h3>
-                <p>
-                  Random map generation using Poisson Disk sampling and Voronoi diagrams. Pathfinding using Dijkstra's
-                  algorithm.
-                </p>
+            <div class="flex flex-row project">
+              <div class="flex project-text project-top-element">
+                <div>
+                  <h3>Rigid Body Simulation</h3>
+                  <p>
+                    I implemented a rigid body solver with contacts as part of a master's course on real-time physics simulation.
+                  </p>
+                </div>
+              </div>
+              <div class="flex">
+                <img class="project-image project-bottom-element project-last-element" src="img/map-generation.png"
+                  alt="" />
+              </div>
+            </div>
+            <div class="flex flex-row project">
+              <div class="flex project-text project-top-element">
+                <div>
+                  <h3>Poisson Disk Sampling in Rust</h3>
+                  <p>
+                    TODO reference paper
+                  </p>
+                </div>
+              </div>
+              <div class="flex">
+                <img class="project-image project-bottom-element" src="img/map-generation.png"
+                  alt="" />
+              </div>
+            </div>
+            <div class="flex flex-row project">
+              <div class="flex project-text project-top-element project-last-element">
+                <div>
+                  <h3>TODO project AI (demander à GAB)</h3>
+                  <p>
+                    TODO machine learning projects
+                  </p>
+                </div>
+              </div>
+              <div class="flex">
+                <img class="project-image project-bottom-element project-last-element" src="img/map-generation.png"
+                  alt="" />
               </div>
             </div>
           </div>

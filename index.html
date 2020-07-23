@@ -18,9 +18,14 @@
     <section id="home" class="flex flex-column fill-viewport-height">
       <div class="flex home-title">
         <div class="shape-container">
-          <b class="name">Louis-Simon Mc Nicoll</b>
+          <b class="font-name">Louis-Simon Mc Nicoll</b>
           <div class="shape circle"></div>
         </div>
+        <!-- TODO add linkedin -->
+        <!-- TODO contact information -->
+        <!-- TODO resume -->
+        <!-- TODO Game Jams -->
+        <!-- TODO Work experiences -->
       </div>
     </section>
 
@@ -34,64 +39,103 @@
 
     <section id="projects" class="nav-bar-padding">
       <div>
-        <h1>Projects</h1>
+        <h1 class="section-title">Projects</h1>
         <div class="flex flex-column projects">
-          <div class="flex flex-row">
-            <div class="flex flex-row project">
-              <div class="flex">
-                <img class="project-image project-top-element" src="img/map-generation.png"
-                  alt="Random map generation using Poisson Disk sampling and Voronoi diagrams. Pathfinding using Dijkstra's algorithm." />
-              </div>
-              <div class="flex project-text project-bottom-element">
-                <div>
-                  <h3>Learning C++</h3>
-                  <p>
-                    This was a project to challenge myself and learn c++. The project generates random maps using Poisson Disk sampling and Voronoi diagrams. It also uses Dijkstra's
-                    algorithm for pathfinding and QML and QT for visualization.
-                  </p>
-                </div>
+          <div class="flex flex-row project">
+            <div class="ref-target-container">
+              <div id="project-generation" class="ref-target"></div>
+            </div>
+            <div class="flex project-image-container project-top-element">
+              <img class="project-image" src="img/map-generation.png"
+                alt="Random map generation using Poisson Disk sampling and Voronoi diagrams. Pathfinding using Dijkstra's algorithm." />
+            </div>
+            <div class="flex project-text project-bottom-element">
+              <div>
+                <h3>Learning C++</h3>
+                <p>
+                  This was a project to challenge myself and learn c++. The project generates random maps using
+                  Poisson Disk sampling and Voronoi diagrams. It also uses Dijkstra's algorithm for pathfinding and
+                  QML and QT for visualization.
+                </p>
               </div>
             </div>
-            <div class="flex flex-row project">
-              <div class="flex project-text project-top-element">
-                <div>
-                  <h3>Rigid Body Simulation</h3>
-                  <p>
-                    I implemented a rigid body solver with contacts as part of a master's course on real-time physics simulation.
-                  </p>
-                </div>
-              </div>
-              <div class="flex">
-                <img class="project-image project-bottom-element project-last-element" src="img/map-generation.png"
-                  alt="" />
+          </div>
+          <div class="flex flex-row project">
+            <div class="ref-target-container">
+              <div id="project-rigid" class="ref-target"></div>
+            </div>
+            <div class="flex project-text project-top-element">
+              <div>
+                <h3>Rigid Body Simulation</h3>
+                <p>
+                  I implemented a rigid body solver with contacts as part of a master's course on real-time physics
+                  simulation. It solves the constraints using a projected Gauss-Seidel iterative solver.
+                </p>
               </div>
             </div>
-            <div class="flex flex-row project">
-              <div class="flex project-text project-top-element">
-                <div>
-                  <h3>Poisson Disk Sampling in Rust</h3>
-                  <p>
-                    TODO reference paper
-                  </p>
-                </div>
-              </div>
-              <div class="flex">
-                <img class="project-image project-bottom-element" src="img/map-generation.png"
-                  alt="" />
+            <div class="flex project-image-container project-bottom-element">
+              <img class="project-image" src="img/map-generation.png"
+                alt="Random map generation using Poisson Disk sampling and Voronoi diagrams. Pathfinding using Dijkstra's algorithm." />
+            </div>
+          </div>
+          <div class="flex flex-row project">
+            <div class="ref-target-container">
+              <div id="project-omaf" class="ref-target"></div>
+            </div>
+            <div class="flex project-image-container project-top-element">
+              <img class="project-image" src="img/omaf-streaming-platform.png"
+                alt="Random map generation using Poisson Disk sampling and Voronoi diagrams. Pathfinding using Dijkstra's algorithm." />
+            </div>
+            <div class="flex project-text project-bottom-element">
+              <div>
+                <h3>OMAF streaming platform</h3>
+                <p>
+                  Capstone project for my Bachelor's degree in Software Engineering. It allows the preparation and
+                  upload of 360-3D video content to be streamed by an http server according to the OMAF standard.
+                  The source media is encoded in tiles of different formats (fps/resolution) which allows adaptive
+                  streaming according to the viewer's orientation.
+                </p>
               </div>
             </div>
-            <div class="flex flex-row project">
-              <div class="flex project-text project-top-element project-last-element">
-                <div>
-                  <h3>TODO project AI (demander à GAB)</h3>
-                  <p>
-                    TODO machine learning projects
-                  </p>
-                </div>
+          </div>
+          <div class="flex flex-row project">
+            <div class="ref-target-container">
+              <div id="project-rust" class="ref-target"></div>
+            </div>
+            <div class="flex project-text project-top-element">
+              <div>
+                <h3>Poisson Disk Sampling in Rust</h3>
+                <p>
+                  Poisson Disk Sampling is a technique to generate random points that are guaranteed to be within
+                  certains distances of each other to obtain a natural looking distribution. I also implemented this
+                  algorithm in C# and c++.
+                </p>
+                <hr class="citation-hr" />
+                <p class="font-reference">
+                  Robert Bridson. 2007. Fast Poisson disk sampling in arbitrary dimensions. In ACM SIGGRAPH 2007
+                  sketches (SIGGRAPH ’07). Association for Computing Machinery, New York, NY, USA, 22–es.
+                  DOI:https://doi.org/10.1145/1278780.1278807
+                </p>
               </div>
-              <div class="flex">
-                <img class="project-image project-bottom-element project-last-element" src="img/map-generation.png"
-                  alt="" />
+            </div>
+            <div class="flex project-image-container project-bottom-element">
+              <img class="project-image" src="img/map-generation.png"
+                alt="Random map generation using Poisson Disk sampling and Voronoi diagrams. Pathfinding using Dijkstra's algorithm." />
+            </div>
+          </div>
+          <div class="flex flex-row project">
+            <div class="ref-target-container">
+              <div id="project-ai" class="ref-target"></div>
+            </div>
+            <div class="flex project-image-container project-top-element project-last-element">
+              <img class="project-image" src="img/omaf-streaming-platform.png" />
+            </div>
+            <div class="flex project-text project-bottom-element project-last-element">
+              <div>
+                <h3>TODO projet AI (demander à GAB)</h3>
+                <p>
+                  TODO machine learning project
+                </p>
               </div>
             </div>
           </div>
@@ -99,15 +143,140 @@
       </div>
     </section>
 
-    <section id="skills" class="nav-bar-padding fill-viewport-height">
+    <section id="skills" class="nav-bar-padding">
       <div>
-        <h1>Skills</h1>
+        <h1 class="section-title">Skills</h1>
+        <div class="flex skills">
+          <table class="skills-table">
+            <tr>
+              <th colspan="2" class="skills-header-column">
+                <h3>Talking to Computers</h3>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <img class="skills-image" src="img/306px-ISO_C++_Logo.svg"></img>
+              </td>
+              <td>
+                Solid understanding of C++ thanks to personnal projects <a href="#project-generation">[1]</a> and
+                physics
+                simulation courses <a href="#project-rigid">[2]</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="skills-image" src="img/javascript-js-seeklogo.com.svg"></img>
+              </td>
+              <td>
+                Extensive Javascript development experience using modern frameworks such as React [1] and Angular [2]
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="skills-image" src="img/android-seeklogo.com.svg"></img>
+              </td>
+              <td>
+                Multiple work experiences in developping Android applications using Java and a sprinkle of Kotlin
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="skills-image" src="img/c-sharp-c-seeklogo.com.svg"></img>
+              </td>
+              <td>
+                Working knowledge of C# gained through multiple Game Jam experiences
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="skills-image" src="img/python-seeklogo.com.svg"></img>
+              </td>
+              <td>
+                Python is mandatory in machine learning and AI contexts which I was exposed to during my studies <a
+                  href="#project-ai">[1]</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="skills-image" src="img/rust-seeklogo.com.svg"></img>
+              </td>
+              <td>
+                I gained familiarity with Rust concepts such as Ownership and listening to that borrow checker through a
+                personal project <a href="#project-rust">[1]</a>
+              </td>
+            </tr>
+
+            <tr>
+              <th colspan="2" class="skills-header-column">
+                <h3>Talking to People</h3>
+              </th>
+            </tr>
+            <tr>
+              <td>Multicultural Environment</td>
+              <td>8 months of work exprience in a Japanese company</td>
+            </tr>
+            <tr>
+              <td>English and French</td>
+              <td>Native Level</td>
+            </tr>
+            <tr>
+              <td>Japanese</td>
+              <td>Advanced intermediate</td>
+            </tr>
+
+            <tr>
+              <th colspan="2" class="skills-header-column">
+                <h3>Using tools</h3>
+              </th>
+            </tr>
+            <tr>
+              <td>Linux</td>
+              <td>I like tinkering with Linux using my personnal computers and Raspberry Pis. My favorite distribution is Arch Linux.</td>
+            </tr>
+            <tr>
+              <td>Development</td>
+              <td>VSCode, Atom, vim, Jetbrain IDEs, QTCreator, Android Studio</td>
+            </tr>
+            <tr>
+              <td>Unity</td>
+              <td>Multiple Game jam experiences [1] [2] along with limited VR usage</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </section>
 
+    <!-- <div class="flex flex-column skills-left-container">
+      <div>
+        <h3>Languages</h3>
+        <div>C++</div>
+        <div>Javascript</div>
+        <div>&nbsp;</div>
+        <div>Java</div>
+        <div>C#</div>
+        <div>Python</div>
+        <div>Rust</div>
+      </div>
+    </div>
+    <div class="flex flex-column skills-right-container">
+      <div>
+        <h3>&nbsp;</h3>
+        <div>Excellent understanding of c++ thanks to personnal projects <a href="#project1">[1]</a> and physics simulation courses <a
+            href="#project2">[2]</a></div>
+        <div>Extensive web development experience using modern frameworks such as React [1] and Angular [2]</div>
+        <div>Android development experience</div>
+        <div>Game Jams</div>
+        <div>Machine learning projects <a href="#project5">[1]</a></div>
+        <div>Familiarity with Rust from personnal projects <a href="#project4">[1]</a></div>
+      </div>
+    </div> -->
+
     <section id="about" class="nav-bar-padding fill-viewport-height">
       <div>
-        <h1>About</h1>
+        <h1 class="section-title">About</h1>
+        <div class="flex flex-column">
+
+        </div>
       </div>
     </section>
   </div>

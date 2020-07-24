@@ -22,6 +22,10 @@ div.root {
     background-color: var(--main-bg-color);
 }
 
+section {
+    padding-top: var(--nav-height);
+}
+
 /*
  * Fonts
  */
@@ -32,17 +36,18 @@ div.root {
     position: relative;
     z-index: 2;
 }
-@media (max-width: 600px),
-(max-height: 600px) {
-    .name {
-        font-family: 'Varela Round', sans-serif;
-        font-size: 64px;
-    }
-}
 .font-content {
     font-family: 'Noto Serif', serif;
     font-size: 24px;
-    color: var(--text-light)
+    color: var(--text-light);
+}
+@media (max-width: 600px), (max-height: 600px) {
+    .font-name {
+        font-size: 64px;
+    }
+    .font-content {
+        font-size: 18px;
+    }
 }
 .font-reference {
     font-family: 'Noto Serif', serif;
@@ -63,10 +68,42 @@ div.root {
     flex-direction: row;
     flex-wrap: wrap;
 }
-.flex.home-title {
+
+/*
+ * Home
+ */
+.home-title {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+}
+.home-text {
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: .5;
+    z-index: 2;
+}
+.home-text-row {
+    max-width: 900px;
+}
+.home-text-row-list {
+    align-items: center;
+}
+.linked-in-container {
+    position: relative;
+    align-items: right;
+    justify-content: right;
+    width: auto;
+    height: 0px;
+    z-index: 2;
+}
+.linked-in-image {
+    width: 54px;
+    height: 54px;
+}
+.linked-in-link {
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 /*
@@ -106,9 +143,6 @@ div.root {
         animation: popDown 0.5s;
     }
 }
-.nav-bar-padding {
-    padding-top: var(--nav-height);
-}
 .section-title {
     margin-bottom: 30px;
 }
@@ -145,7 +179,7 @@ div.root {
 }
 
 /* 
- * Projects section
+ * Projects
  */
  :root {
     --project-spacing: 32px;
@@ -155,7 +189,7 @@ div.root {
 }
 .project {
     justify-content: center;
-    width: 100vw;
+    width: auto;
 }
 .project-text {
     width: 25vw;
@@ -175,8 +209,8 @@ div.root {
     display: block;
     width: auto;
     height: auto;
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 20vw;
+    max-height: 20vw;
 }
 .project-top-element {
     border-bottom: var(--separation-border);
@@ -187,10 +221,20 @@ div.root {
     justify-content: left;
 }
 @media (max-width: 1200px) {
+    .project-image-container {
+        width: 40vw;
+    }
+    .project-text {
+        width: 40vw;
+    }
+    .project-image {
+        max-width: 40vw;
+        max-height: 40vw;
+    }
     .project-top-element {
         border-bottom: var(--separation-border);
         justify-content: center;
-    }    
+    }
     .project-bottom-element {
         border-bottom: var(--separation-border);
         justify-content: center;
@@ -202,6 +246,10 @@ div.root {
     }
 }
 @media (max-width: 900px) {
+    .project-image {
+        max-width: 400px;
+        max-height: 400px;
+    }
     .project-top-element{
         border-bottom: none;
         margin-bottom: 0px;
@@ -220,7 +268,7 @@ div.root {
 }
 
 /* 
- * Skills section
+ * Skills
  */
  :root {
     --skills-spacing: 10px;
@@ -255,6 +303,34 @@ div.root {
 .skills-image {
     max-width: 50px;
     max-height: 50px;
+}
+
+/* 
+ * About
+ */
+.about {
+    align-items: center;
+}
+.about-row {
+    flex-direction: row;
+    width: 75vw;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 200px;
+}
+.me-image {
+    width: 250px;
+    height: 250px;
+}
+.about-text {
+    margin-left: 20px;
+}
+.contact-me-row {
+    align-items: center;
+    margin-top: 20px;
+}
+.resume-link {
+    margin-left: 30px;
 }
 
 /* 

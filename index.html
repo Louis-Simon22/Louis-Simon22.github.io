@@ -15,9 +15,6 @@
 
 <body>
   <div class="root font-content">
-    <!-- TODO add linkedin -->
-    <!-- TODO contact information -->
-    <!-- TODO resume -->
     <!-- TODO Game Jams -->
     <!-- TODO Work experiences -->
     <div class="flex flex-row linked-in-container">
@@ -80,7 +77,7 @@
               <div>
                 <h3>Learning C++</h3>
                 <p>
-                  This was a project to challenge myself and learn c++. The project generates random maps using
+                  This was a project to challenge myself and learn C++. The project generates random maps using
                   Poisson Disk sampling and Voronoi diagrams. It also uses Dijkstra's algorithm for pathfinding and
                   QML and QT for visualization.
                 </p>
@@ -101,67 +98,74 @@
               </div>
             </div>
             <div class="flex project-image-container project-bottom-element">
-              <img class="project-image" src="img/map-generation.png"
+              <img class="project-image" src="img/rigid-bodies-sim.gif"
                 alt="Random map generation using Poisson Disk sampling and Voronoi diagrams. Pathfinding using Dijkstra's algorithm." />
+            </div>
+          </div>
+          <div class="flex flex-row project">
+            <div class="ref-target-container">
+              <div id="project-rigid" class="ref-target"></div>
+            </div>
+            <div class="flex project-image-container project-top-element">
+              <img class="project-image" src="img/fluids-two-towers.gif"
+                alt="Random map generation using Poisson Disk sampling and Voronoi diagrams. Pathfinding using Dijkstra's algorithm." />
+            </div>
+            <div class="flex project-text project-bottom-element">
+              <div>
+                <h3>Position Based Fluids Simulation</h3>
+                <p>
+                  This is a position based fluids simulation implemented as a module of the Godot game Engine. It makes
+                  use of nearest neighbors search to estimate density and solve incompressibility constraints.
+                </p>
+                <hr class="citation-hr" />
+                <p class="font-reference">
+                  Miles Macklin and Matthias Müller. 2013. Position based fluids. ACM Trans. Graph. 32, 4, Article 104
+                  (July 2013), 12 pages. DOI:https://doi.org/10.1145/2461912.2461984
+                </p>
+              </div>
             </div>
           </div>
           <div class="flex flex-row project">
             <div class="ref-target-container">
               <div id="project-omaf" class="ref-target"></div>
             </div>
-            <div class="flex project-image-container project-top-element">
-              <img class="project-image" src="img/omaf-streaming-platform.png"
-                alt="Random map generation using Poisson Disk sampling and Voronoi diagrams. Pathfinding using Dijkstra's algorithm." />
-            </div>
-            <div class="flex project-text project-bottom-element">
+            <div class="flex project-text project-top-element">
               <div>
                 <h3>OMAF streaming platform</h3>
                 <p>
                   Capstone project for my Bachelor's degree in Software Engineering. It allows the preparation and
                   upload of 360-3D video content to be streamed by an http server according to the OMAF standard.
                   The source media is encoded in tiles of different formats (fps/resolution) which allows adaptive
-                  streaming according to the viewer's orientation.
+                  streaming according to bandwidth capacity and head orientation.
                 </p>
               </div>
+            </div>
+            <div class="flex project-image-container project-bottom-element">
+              <img class="project-image" src="img/omaf-streaming-platform.png"
+                alt="Random map generation using Poisson Disk sampling and Voronoi diagrams. Pathfinding using Dijkstra's algorithm." />
             </div>
           </div>
           <div class="flex flex-row project">
             <div class="ref-target-container">
               <div id="project-rust" class="ref-target"></div>
             </div>
-            <div class="flex project-text project-top-element">
+            <div class="flex project-image-container project-top-element project-last-element">
+              <img class="project-image" src="img/poisson_disk_sampling.png"
+                alt="Random map generation using Poisson Disk sampling and Voronoi diagrams. Pathfinding using Dijkstra's algorithm." />
+            </div>
+            <div class="flex project-text  project-bottom-element project-last-element">
               <div>
                 <h3>Poisson Disk Sampling in Rust</h3>
                 <p>
                   Poisson Disk Sampling is a technique to generate random points that are guaranteed to be within
                   certains distances of each other to obtain a natural looking distribution. I also implemented this
-                  algorithm in C# and c++.
+                  algorithm in C# and C++.
                 </p>
                 <hr class="citation-hr" />
                 <p class="font-reference">
                   Robert Bridson. 2007. Fast Poisson disk sampling in arbitrary dimensions. In ACM SIGGRAPH 2007
                   sketches (SIGGRAPH ’07). Association for Computing Machinery, New York, NY, USA, 22–es.
                   DOI:https://doi.org/10.1145/1278780.1278807
-                </p>
-              </div>
-            </div>
-            <div class="flex project-image-container project-bottom-element">
-              <img class="project-image" src="img/map-generation.png"
-                alt="Random map generation using Poisson Disk sampling and Voronoi diagrams. Pathfinding using Dijkstra's algorithm." />
-            </div>
-          </div>
-          <div class="flex flex-row project">
-            <div class="ref-target-container">
-              <div id="project-ai" class="ref-target"></div>
-            </div>
-            <div class="flex project-image-container project-top-element project-last-element">
-              <img class="project-image" src="img/omaf-streaming-platform.png" />
-            </div>
-            <div class="flex project-text project-bottom-element project-last-element">
-              <div>
-                <h3>TODO projet AI (demander à GAB)</h3>
-                <p>
-                  TODO machine learning project
                 </p>
               </div>
             </div>
@@ -182,17 +186,16 @@
             </tr>
             <tr>
               <td>
-                <img class="skills-image" src="img/306px-ISO_C++_Logo.svg"></img>
+                <img class="skills-image" src="img/c++.svg"></img>
               </td>
               <td>
                 Solid understanding of C++ thanks to personnal projects <a href="#project-generation">[1]</a> and
-                physics
-                simulation courses <a href="#project-rigid">[2]</a>
+                physics simulation courses <a href="#project-rigid">[2]</a>
               </td>
             </tr>
             <tr>
               <td>
-                <img class="skills-image" src="img/javascript-js-seeklogo.com.svg"></img>
+                <img class="skills-image" src="img/javascript-js.svg"></img>
               </td>
               <td>
                 Extensive Javascript development experience using modern frameworks such as React [1] and Angular [2]
@@ -200,7 +203,7 @@
             </tr>
             <tr>
               <td>
-                <img class="skills-image" src="img/android-seeklogo.com.svg"></img>
+                <img class="skills-image" src="img/android.svg"></img>
               </td>
               <td>
                 Multiple work experiences in developping Android applications using Java and a sprinkle of Kotlin
@@ -208,7 +211,7 @@
             </tr>
             <tr>
               <td>
-                <img class="skills-image" src="img/c-sharp-c-seeklogo.com.svg"></img>
+                <img class="skills-image" src="img/c-sharp-c.svg"></img>
               </td>
               <td>
                 Working knowledge of C# gained through multiple Game Jam experiences
@@ -216,16 +219,15 @@
             </tr>
             <tr>
               <td>
-                <img class="skills-image" src="img/python-seeklogo.com.svg"></img>
+                <img class="skills-image" src="img/python.svg"></img>
               </td>
               <td>
-                Python is mandatory in machine learning and AI contexts which I was exposed to during my studies <a
-                  href="#project-ai">[1]</a>
+                Python is mandatory in machine learning and AI contexts which I was exposed to during my studies
               </td>
             </tr>
             <tr>
               <td>
-                <img class="skills-image" src="img/rust-seeklogo.com.svg"></img>
+                <img class="skills-image" src="img/rust.svg"></img>
               </td>
               <td>
                 I gained familiarity with Rust concepts such as Ownership and listening to that borrow checker through a

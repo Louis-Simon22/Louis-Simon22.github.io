@@ -37,16 +37,16 @@
           <div>
             <p>I am interested in</p>
             <div class="flex flex-column home-text-row-list">
-              <div>Software Architecture</div>
-              <div>Project Management</div>
+              <div>Software Optimization</div>
+              <div>Physics Simulations</div>
               <div>Requirements Engineering</div>
             </div>
             <div>
               <p><br>I am passionate in</p>
             </div>
             <div class="flex flex-column home-text-row-list">
-              <div>Customer Interactions</div>
               <div>Performance and Availability Challenges</div>
+              <div>Customer Interactions</div>
               <div>Multi Platform Development</div>
             </div>
           </div>
@@ -67,19 +67,23 @@
         <div class="flex flex-column projects">
           <div class="flex flex-row project">
             <div class="ref-target-container">
-              <div id="project-generation" class="ref-target"></div>
+              <div id="project-rigid" class="ref-target"></div>
             </div>
             <div class="flex project-image-container project-top-element">
-              <img class="project-image" src="img/map-generation.png"
+              <img class="project-image" src="img/fluids-two-towers.gif"
                 alt="Random map generation using Poisson Disk sampling and Voronoi diagrams. Pathfinding using Dijkstra's algorithm." />
             </div>
             <div class="flex project-text project-bottom-element">
               <div>
-                <h3>Learning C++</h3>
+                <h3>Position Based Fluids Simulation</h3>
                 <p>
-                  This was a project to challenge myself and learn C++. The project generates random maps using
-                  Poisson Disk sampling and Voronoi diagrams. It also uses Dijkstra's algorithm for pathfinding and
-                  QML and QT for visualization.
+                  This is a position based fluids simulation implemented as a module of the Godot game engine. It makes
+                  use of nearest neighbors search to estimate density and solve incompressibility constraints.
+                </p>
+                <hr class="citation-hr" />
+                <p class="font-reference">
+                  Miles Macklin and Matthias Müller. 2013. Position based fluids. ACM Trans. Graph. 32, 4, Article 104
+                  (July 2013), 12 pages. DOI:https://doi.org/10.1145/2461912.2461984
                 </p>
               </div>
             </div>
@@ -104,23 +108,19 @@
           </div>
           <div class="flex flex-row project">
             <div class="ref-target-container">
-              <div id="project-rigid" class="ref-target"></div>
+              <div id="project-generation" class="ref-target"></div>
             </div>
             <div class="flex project-image-container project-top-element">
-              <img class="project-image" src="img/fluids-two-towers.gif"
+              <img class="project-image" src="img/map-generation.png"
                 alt="Random map generation using Poisson Disk sampling and Voronoi diagrams. Pathfinding using Dijkstra's algorithm." />
             </div>
             <div class="flex project-text project-bottom-element">
               <div>
-                <h3>Position Based Fluids Simulation</h3>
+                <h3>Learning C++</h3>
                 <p>
-                  This is a position based fluids simulation implemented as a module of the Godot game Engine. It makes
-                  use of nearest neighbors search to estimate density and solve incompressibility constraints.
-                </p>
-                <hr class="citation-hr" />
-                <p class="font-reference">
-                  Miles Macklin and Matthias Müller. 2013. Position based fluids. ACM Trans. Graph. 32, 4, Article 104
-                  (July 2013), 12 pages. DOI:https://doi.org/10.1145/2461912.2461984
+                  This was a project to challenge myself and learn C++. The project generates random maps using
+                  Poisson Disk sampling and Voronoi diagrams. It also uses Dijkstra's algorithm for pathfinding and
+                  QML and QT for visualization.
                 </p>
               </div>
             </div>
